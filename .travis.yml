@@ -1,4 +1,4 @@
-sudo: false
+sudo: true
 
 addons:
   apt:
@@ -6,6 +6,7 @@ addons:
       - sourceline: 'ppa:git-core/ppa'
     packages:
       - git
+      - upx-ucl
 
 language: go
 
