@@ -32,3 +32,5 @@ deploy:
     - go-getter.exe
     - go-getter
   skip_cleanup: true
+  on:
+    tag: true
