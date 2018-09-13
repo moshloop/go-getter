@@ -21,3 +21,13 @@ branches:
 matrix:
   allow_failures:
     - go: master
+
+script:  make
+deploy:
+  provider: releases
+  api_key: $GITHUB_TOKEN
+  file:
+    - go-getter_osx
+    - go-getter.exe
+    - go-getter
+  skip_cleanup: true
